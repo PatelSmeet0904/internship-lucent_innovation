@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Students List</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="list-container">
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="./list.html">STUDENTS</a></li>
+            </ul>
+        </nav>
+        <div id="studentsTable"></div>
+    </div>
+    <div id="editModal">
+        <div class="container list-container">
+            <div class="card edit-card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <div class="go-back"><a href="list.html">Check Students</a></div>
+                        <h2>STUDENT INFORMATION</h2>
+                        <form id="studentEditForm">
+                            First Name:<input type="text" class="input-box" id="fname" placeholder="First Name"
+                                required>
+                            Last Name:<input type="text" class="input-box" id="lname" placeholder="Last Name" required>
+                            Phone:<input type="text" class="input-box" id="phone" minlength="10" maxlength="10"
+                                placeholder="Phone Number" required>
+                            Email:<input type="email" class="input-box" id="email" placeholder="Email Id" disabled
+                                required>
+                            Address 1:<input type="text" class="input-box" id="address1" placeholder="Address 1"
+                                required>
+                            Address 2:<input type="text" class="input-box" id="address2" placeholder="Address 2"
+                                required>
+                            PIN:<input type="text" minlength="5" maxlength="6" class="input-box" id="pincode"
+                                placeholder="PIN code" required>
+                            <button type="submit" class="change-btn">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/list.js"></script>
+</body>
+
+</html>

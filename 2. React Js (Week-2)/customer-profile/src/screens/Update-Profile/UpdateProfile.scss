@@ -1,0 +1,58 @@
+
+.Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10% auto;
+
+    .profileInfo {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 7%;
+        background-color: rgb(196 217 235);
+        box-shadow: 10px 10px 8px 6px #323131;
+        padding: 30px 0px;
+        .img {
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+
+                img {
+                        width: 15rem;
+                        border-radius: 50%;
+                    }
+            }
+        .details {
+            text-align: left;
+            margin: auto 10px;
+            // width: 50%;
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            h4 {
+                    font-size: 1.5rem;
+                    margin: auto 0px;
+                }
+            .link {
+                text-decoration: none;
+                margin: 10px 0px;
+
+                .btn {
+                    background-color: white;
+                    cursor: pointer;
+                    padding: 12px;
+                    border: none;
+                    font-size: 1rem;
+                }
+
+                .btn:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API call</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: radial-gradient(circle, rgba(225, 174, 238, 1) 0%, rgba(148, 177, 233, 1) 100%);
+        }
+
+        .loadingPage {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .loadingCircle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 10px solid #ffffff;
+            border-top: 10px solid rgb(34, 34, 34);
+            border-bottom: 10px solid rgb(32, 23, 23);
+            animation: loading 1s linear infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        header {
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1000px auto;
+            font-size: 3rem;
+            display: none;
+        }
+
+        #orders {
+            display: none;
+            justify-content: center;
+            text-align: center;
+            margin: 5% auto;
+        }
+
+        table {
+            border-spacing: 0px;
+            border: 1px solid rgb(43, 43, 43);
+        }
+
+        th {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+
+        button {
+            padding: 7px 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            opacity: 0.6;
+        }
+
+        #back {
+            margin: 20px;
+        }
+
+        .detailsBox {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 7%;
+            background-color: rgb(196 217 235);
+            box-shadow: 10px 10px 8px 6px #323131;
+        }
+
+        #btn {
+            font-size: 1.2rem;
+            padding: 15px;
+        }
+
+        .productInfo {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 30px 0px;
+        }
+
+        .img {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 18rem;
+            height: 12rem;
+            border-radius: 2px solid black;
+        }
+
+        .details {
+            text-align: left;
+            padding: 15px 0px;
+            width: 40%;
+        }
+
+        .details h4 {
+            font-size: 1.5rem;
+            margin: 7px 0px;
+        }
+
+        .details p {
+            font-size: 1.3rem;
+        }
+
+        hr {
+            width: 60%;
+            height: 3px;
+            background-color: black;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .img,
+            .details {
+                width: 80%;
+                text-align: center;
+                margin: auto;
+            }
+
+            hr {
+                margin: auto;
+                width: 40%;
+            }
+
+            .img {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loadingPage" id="loader">
+        <div class="loadingCircle"></div>
+    </div>
+    <header></header>
+    <div id="orders"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>

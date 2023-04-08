@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="./list.html">STUDENTS</a></li>
+            </ul>
+        </nav>
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>REGISTER STUDENT</h2>
+                    <form id="studentForm">
+                        <input type="text" class="input-box" id="fname" placeholder="First Name" required>
+                        <input type="text" class="input-box" id="lname" placeholder="Last Name" required>
+                        <input type="text" class="input-box" id="phone" minlength="10" maxlength="10" placeholder="Phone Number"
+                            required>
+                        <input type="email" class="input-box" id="email" placeholder="Email Id" required>
+                        <input type="text" class="input-box" id="address1" placeholder="Address 1" required>
+                        <input type="text" class="input-box" id="address2" placeholder="Address 2" required>
+                        <input type="text" minlength="5" maxlength="6" class="input-box" id="pincode" placeholder="PIN code" required>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/register.js"></script>
+</body>
+
+</html>
