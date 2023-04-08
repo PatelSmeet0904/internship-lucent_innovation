@@ -1,0 +1,17 @@
+PORTNO = 5000
+ACCESS_TOKEN=sqfxsc9b8gstdg6w8ce5j4a7560kwk9
+STORE_HASH = rdcj5fgm6a
+API_PATH= https://api.bigcommerce.com/stores/rdcj5fgm6a/v3/
+API_KEY=9007982fb77f87a23f9899a9adf14358
+CLIENT_ID=m74i50zuose0kfsi915835zsyhzy2js
+CLIENT_SECRET=6daf3d7099140bf9a3b0fadaeeed5d099507d016241c2d343326898ccfac3e1b
+
+
+DB_USERNAME = root
+DB_PASSWORD = root
+DB_HOSTNAME = 127.0.0.1
+DB_PORT = 3306
+DB_DATABASE = bigcommerce
+
+HASH_SALT = 10
+JWT_SECRET = thisisasecret
